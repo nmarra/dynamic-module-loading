@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-	selector: "materia-addon-view",
+	selector: "plugin-addon-view",
     templateUrl: './addon-view.component.html',
     styleUrls: ['./addon-view.component.css']
 })

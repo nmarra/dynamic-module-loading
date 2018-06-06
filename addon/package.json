@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng-packagr",
+    "serve": "http-server --cors -c -p 8081",
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "ng lint --type-check=true",
-    "lint:sass": "sass-lint --verbose --no-exit --config ./.sass-lint.yml",
-    "serve": "http-server --cors -c -p 8081"
+    "lint:sass": "sass-lint --verbose --no-exit --config ./.sass-lint.yml"
   },
   "dependencies": {
     "@angular/common": "5.2.0",
