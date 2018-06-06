@@ -1,4 +1,4 @@
 cd addon
-npm install && npm run build && npm run serve
+npm install && npm run build
 cd ../main-app
-npm install && npm run build && npm run start
+npm install && npm run build
