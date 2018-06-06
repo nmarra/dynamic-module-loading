@@ -22,7 +22,7 @@ npm run serve
 # Run the Main App
 ```
 cd main-app
-npm run webpack-start
+npm run start-webpack
 ```
 
 # Testing dynamic reloading
