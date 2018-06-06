@@ -17,7 +17,8 @@ export class AppComponent {
 
   load() {
     this.addonService.loadAddon('http://127.0.0.1:8081/dist/addon-module/bundles/addon.umd.js').then(cmpRef => {
-      this.view.insert(cmpRef.hostView);
+        this.view.clear();
+        this.view.insert(cmpRef.hostView);
     });
   }
 }
