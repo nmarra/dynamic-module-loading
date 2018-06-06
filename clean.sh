@@ -1,0 +1,1 @@
+rm -rf addon/dist addon/node_modules main-app/dist main-app/node_modules

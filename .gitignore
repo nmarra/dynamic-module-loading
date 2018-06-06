@@ -1,0 +1,6 @@
+addon/node_modules
+addon/dist
+main-app/node_modules
+main-app/dist
+.idea
+**/package-lock.json
