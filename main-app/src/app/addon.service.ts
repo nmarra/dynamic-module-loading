@@ -5,7 +5,8 @@ import {
   ComponentRef,
   NgModuleRef
 } from '@angular/core';
-import { configSystemJS } from './systemjs.config';
+import * as AngularCommon from '@angular/common';
+import * as AngularCore from '@angular/core';
 
 declare const SystemJS;
 
@@ -19,7 +20,8 @@ export class AddonService {
 
 
   private loadSystemJs(addonPath: string) {
-    SystemJS.config(configSystemJS);
+    SystemJS.set('@angular/core', SystemJS.newModule(AngularCore));
+    SystemJS.set('@angular/common', SystemJS.newModule(AngularCommon));
     return SystemJS.load(addonPath);
   }
 
